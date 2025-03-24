@@ -16,8 +16,9 @@
 #define le	<=
 #define gt	>
 
-#define FULL_VECTOR	 "Class vector filled, impossible to add an element!"
-#define EMPTY_VECTOR "Too few elements to take action!"
+#define FULL_VECTOR		 "Class vector filled, impossible to add an element!"
+#define NOT_ENOUGH_SPACE "Class almost full, impossible to add all elements!"
+#define EMPTY_VECTOR	 "Too few elements to take action!"
 
 /* ############################################################################################## */
 
@@ -32,7 +33,7 @@ class Span {
 
 		template <typename Iter>
 		void addNumber(const Iter begin, const Iter end) {
-			if (_vector.size() + std::distance(begin, end) gt _size)	throw std::logic_error(FULL_VECTOR);
+			if (_vector.size() + std::distance(begin, end) gt _size)	throw std::logic_error(NOT_ENOUGH_SPACE);
 
 			for (Iter current = begin; current neq end; current++)
 				_vector.push_back(*current);
