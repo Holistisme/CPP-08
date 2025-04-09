@@ -51,18 +51,18 @@ int main() {
 		std::list<int>	 list;
 	
 		std::cout << "_______________________________________________________________________________\n" << std::endl;
-					std::cout << "You can execute following indexes:\n"
-													 << ColorFormat::formatString("\n0 - EXIT", "red", "italic")	 << ": to end the program"
-													 << ColorFormat::formatString("\n1 - BEGIN", "blue", "italic")	 << ": to list containers from the beginning."
-													 << ColorFormat::formatString("\n2 - EMPTY", "green", "italic")	 << ": to check if containers are empty."
-													 << ColorFormat::formatString("\n3 - END", "yellow", "italic")	 << ": to list the containers from the end."
-													 << ColorFormat::formatString("\n4 - RBEGIN", "cyan", "italic")	 << ": to list containers from the reverse beginning."
-													 << ColorFormat::formatString("\n5 - REND", "magenta", "italic") << ": to list containers from the reverse end."
-													 << ColorFormat::formatString("\n6 - POP", "red", "italic")		 << ": to remove the element on top of the stacks."
-													 << ColorFormat::formatString("\n7 - SIZE", "blue", "italic")	 << ": to get the size of the stacks."
-													 << ColorFormat::formatString("\n8 - TOP", "green", "italic")	 << ": to get the element on top of the stacks."
-													 << ColorFormat::formatString("\n9 - PUSH", "yellow", "italic")	 << ": to add a number to the stacks." << std::endl;
-					std::cout << "_______________________________________________________________________________" << std::endl;
+		std::cout << "You can execute following indexes:\n"
+										 << ColorFormat::formatString("\n0 - EXIT", "red", "italic")	 << ": to end the program"
+										 << ColorFormat::formatString("\n1 - BEGIN", "blue", "italic")	 << ": to list containers from the beginning."
+										 << ColorFormat::formatString("\n2 - EMPTY", "green", "italic")	 << ": to check if containers are empty."
+										 << ColorFormat::formatString("\n3 - END", "yellow", "italic")	 << ": to list the containers from the end."
+										 << ColorFormat::formatString("\n4 - RBEGIN", "cyan", "italic")	 << ": to list containers from the reverse beginning."
+										 << ColorFormat::formatString("\n5 - REND", "magenta", "italic") << ": to list containers from the reverse end."
+										 << ColorFormat::formatString("\n6 - POP", "red", "italic")		 << ": to remove the element on top of the stacks."
+										 << ColorFormat::formatString("\n7 - SIZE", "blue", "italic")	 << ": to get the size of the stacks."
+										 << ColorFormat::formatString("\n8 - TOP", "green", "italic")	 << ": to get the element on top of the stacks."
+										 << ColorFormat::formatString("\n9 - PUSH", "yellow", "italic")	 << ": to add a number to the stacks." << std::endl;
+		std::cout << "_______________________________________________________________________________"	 << std::endl;
 
 		bool running = true;
 		while (running) {
